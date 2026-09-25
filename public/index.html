@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="虚构全栈开发工程师周屿的个人简历网站示例。">
+  <meta name="color-scheme" content="dark light">
+  <title>周屿 · 全栈开发工程师</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23090b0f'/%3E%3Cpath d='M18 22l-10 10 10 10M46 22l10 10-10 10M38 14L26 50' fill='none' stroke='%238af5c8' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="周屿，返回顶部"><span>&lt;</span>ZY<span>/&gt;</span></a>
+    <nav aria-label="主导航">
+      <a href="#work">项目</a>
+      <a href="#experience">经历</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="切换明暗主题" aria-pressed="false">
+      <span class="theme-icon" aria-hidden="true">◐</span><span class="theme-text">浅色</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="status"><span></span> OPEN TO SENIOR FULL-STACK ROLES</p>
+        <h1 id="hero-title">把复杂系统<br>做得<span>清楚、稳定、快。</span></h1>
+        <p class="intro">你好，我是<strong>周屿</strong>，一名高级全栈开发工程师。过去 7 年，我在产品体验、后端系统和云基础设施之间搭桥，让团队更快地交付可靠软件。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">查看代表项目 <span aria-hidden="true">↘</span></a>
+          <a class="button secondary" href="mailto:zhouyu.demo@example.com">和我聊聊 <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="demo-note">虚构人物与数据 · Resume Site Studio 演示</p>
+      </div>
+
+      <aside class="terminal-card" aria-label="工程师能力摘要">
+        <div class="terminal-bar"><span></span><span></span><span></span><b>zhouyu@portfolio</b></div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> whoami</p>
+          <p class="result">Senior Full-stack Engineer</p>
+          <p><span class="prompt">$</span> cat focus.json</p>
+          <pre>{
+  <span>"product"</span>: "clear",
+  <span>"systems"</span>: "reliable",
+  <span>"delivery"</span>: "fast"
+}</pre>
+          <p><span class="prompt">$</span> uptime --career</p>
+          <p class="result accent">7 years · still learning <i class="cursor"></i></p>
+        </div>
+        <div class="terminal-footer"><span>TypeScript</span><span>Go</span><span>Cloud</span></div>
+      </aside>
+
+      <div class="hero-metrics" aria-label="职业成果摘要">
+        <div><strong>620<small>ms</small></strong><span>核心工作台 p95 首屏</span></div>
+        <div><strong>2.4<small>亿</small></strong><span>日均事件处理量</span></div>
+        <div><strong>99.93<small>%</small></strong><span>自动化任务成功率</span></div>
+        <div><strong>320<small>+</small></strong><span>月均生产发布</span></div>
+      </div>
+    </section>
+
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="section-head reveal">
+        <p class="section-kicker">01 / SELECTED WORK</p>
+        <h2 id="work-title">从用户界面，到数据流。</h2>
+        <p>三个项目，分别展示我如何处理实时系统、业务自动化和工程效率。</p>
+      </div>
+
+      <article class="project project-featured reveal">
+        <div class="project-copy">
+          <div class="project-number">01</div>
+          <p class="project-type">实时可观测平台 · 技术负责人</p>
+          <h3>PulseBoard</h3>
+          <p class="project-summary">告警、日志和指标分散在多个系统，工程师需要来回切换才能判断故障影响。我们把排障所需的信息收拢到一条实时事件链路中。</p>
+          <ul class="project-outcomes">
+            <li><strong>1.8s → 620ms</strong><span>核心工作台 p95 首屏时间</span></li>
+            <li><strong>2.4 亿 / 日</strong><span>统一事件模型处理量</span></li>
+          </ul>
+          <div class="tags"><span>Next.js</span><span>Go</span><span>Kafka</span><span>ClickHouse</span></div>
+        </div>
+        <div class="product-window pulse-window" aria-label="PulseBoard 产品界面示意图">
+          <div class="window-top"><span></span><span></span><span></span><b>pulseboard / live</b></div>
+          <div class="dashboard">
+            <div class="dash-side"><b>PB</b><i></i><i></i><i></i><i></i></div>
+            <div class="dash-main">
+              <div class="dash-heading"><div><small>PRODUCTION</small><strong>Service health</strong></div><span>Live</span></div>
+              <div class="chart"><div class="chart-grid"></div><svg viewBox="0 0 500 140" role="img" aria-label="服务健康趋势图"><path d="M0 105 C35 95 50 108 82 91 S135 72 165 80 S220 116 250 64 S302 28 330 54 S385 99 414 47 S465 25 500 34" fill="none" stroke="currentColor" stroke-width="4" vector-effect="non-scaling-stroke"/></svg></div>
+              <div class="dash-cards"><div><small>Requests</small><strong>18.4k/s</strong><em>+12.6%</em></div><div><small>Error rate</small><strong>0.08%</strong><em>Healthy</em></div><div><small>p95 latency</small><strong>620ms</strong><em>-18.2%</em></div></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project compact reveal">
+          <div class="mini-ui flow-ui" aria-label="AtlasFlow 工作流界面示意图">
+            <div class="mini-top"><b>AtlasFlow</b><span>Run #8421</span></div>
+            <div class="flow"><i class="done">✓</i><span></span><i class="done">✓</i><span></span><i class="active">3</i><span></span><i>4</i></div>
+            <div class="flow-rows"><p><b>Document parsed</b><em>0.8s</em></p><p><b>Policy matched</b><em>1.2s</em></p><p><b>Human review</b><em>Waiting</em></p></div>
+          </div>
+          <p class="project-type">业务自动化 · 全栈工程师</p>
+          <h3>AtlasFlow</h3>
+          <p>把文档解析、规则判断与人工复核串成可追踪工作流，自动化 68% 的重复步骤。</p>
+          <div class="tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+        </article>
+
+        <article class="project compact reveal">
+          <div class="mini-ui deploy-ui" aria-label="Dockyard Cloud 发布界面示意图">
+            <div class="mini-top"><b>Dockyard</b><span>production</span></div>
+            <div class="deploy-line"><i></i><span><b>api-gateway</b><small>v2.18.4</small></span><em>Healthy</em></div>
+            <div class="deploy-chart"><span style="height:28%"></span><span style="height:42%"></span><span style="height:36%"></span><span style="height:61%"></span><span style="height:54%"></span><span style="height:78%"></span><span style="height:67%"></span><span style="height:88%"></span><span style="height:80%"></span><span style="height:95%"></span></div>
+          </div>
+          <p class="project-type">开发者平台 · 平台工程师</p>
+          <h3>Dockyard Cloud</h3>
+          <p>统一服务模板、金丝雀发布和回滚路径，把常规发布前置时间从 2 天缩短到 45 分钟。</p>
+          <div class="tags"><span>Kubernetes</span><span>Terraform</span><span>GitHub Actions</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience" aria-labelledby="experience-title">
+      <div class="section-head reveal">
+        <p class="section-kicker">02 / EXPERIENCE</p>
+        <h2 id="experience-title">能写代码，也能推动事情落地。</h2>
+      </div>
+      <div class="experience-layout">
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="time">2022—至今</div>
+            <div><p>Nebula Labs <span>虚构公司</span></p><h3>高级全栈开发工程师</h3><ul><li>负责实时可观测产品的前后端架构与关键性能治理。</li><li>建立服务模板、质量门禁和可回滚发布流程。</li><li>与产品、设计和平台团队共同拆解复杂业务目标。</li></ul></div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="time">2019—2022</div>
+            <div><p>Cloudnest <span>虚构公司</span></p><h3>全栈开发工程师</h3><ul><li>参与多租户协作产品从 0 到 1 的设计与交付。</li><li>搭建可审计的账单事件链路和异步任务系统。</li></ul></div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="time">2015—2019</div>
+            <div><p>南方科技学院 <span>虚构学校</span></p><h3>软件工程学士</h3></div>
+          </article>
+        </div>
+        <aside class="stack-card reveal">
+          <p class="section-kicker">CURRENT STACK</p>
+          <div class="stack-groups">
+            <div><span>FRONTEND</span><p>TypeScript · React · Next.js</p></div>
+            <div><span>BACKEND</span><p>Node.js · Go · PostgreSQL</p></div>
+            <div><span>DATA</span><p>Redis · Kafka · ClickHouse</p></div>
+            <div><span>PLATFORM</span><p>Kubernetes · Terraform · CI/CD</p></div>
+          </div>
+          <p class="principle">“好的全栈工程不是技术清单，而是对整个产品结果负责。”</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="contact reveal" id="contact" aria-labelledby="contact-title">
+      <p class="section-kicker">03 / LET'S BUILD</p>
+      <h2 id="contact-title">有复杂的问题？<br><span>我们一起把它做简单。</span></h2>
+      <p>正在寻找高级全栈开发、平台工程或技术负责人机会。</p>
+      <a class="button primary" href="mailto:zhouyu.demo@example.com">zhouyu.demo@example.com <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Zhou Yu · 虚构简历网站示例</span><a href="#top">回到顶部 ↑</a></footer>
+</body>
+</html>
