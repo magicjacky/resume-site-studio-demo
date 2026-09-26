@@ -5,3 +5,7 @@ work/
 !.env.example
 Thumbs.db
 .DS_Store
+.playwright-cli/
+server.log
+server.err.log
+__pycache__/
